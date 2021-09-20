@@ -17,6 +17,7 @@ function App() {
   
   return (
     <div className="App">
+    
       <Header className="App-header" 
         increaseCounters = {increaseCounters} 
         decreaseCounters = {decreaseCounters}
@@ -25,6 +26,7 @@ function App() {
       // {counters} 
 
       />
+    
     </div>
   );
 }

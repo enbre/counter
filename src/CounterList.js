@@ -1,4 +1,5 @@
 import React from 'react'
+import Counter from './Counter'
 
 function CounterList() {
    
@@ -7,6 +8,7 @@ function CounterList() {
    return (
       <div className="Counter-row">
          {/* {counters} */}
+         <Counter />
       </div>
    )
 }
