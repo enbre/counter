@@ -8,7 +8,7 @@ function Counter() {
 
    useEffect(() => {
       document.querySelector("h3" ).innerHTML = `Count: ${count+base+adjust}`
-      console.log(`count: ${count}, base: ${base}, adjust: ${adjust}`)
+      // console.log(`count: ${count}, base: ${base}, adjust: ${adjust}`)
    }
    ,[ count,adjust, base]
    )
