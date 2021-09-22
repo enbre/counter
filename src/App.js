@@ -2,6 +2,7 @@
 import React, {useState, useEffect} from "react";
 import Header from "./Header";
 import CounterList from "./CounterList";
+import Navbar from "./Navbar"
 
 import './App.css';
 
@@ -31,12 +32,16 @@ function App() {
     
       <Header className="App-header" 
         counterNum = {counterNum}
+        increment = {increment}
         increaseCounters = {increaseCounters} 
         decreaseCounters = {decreaseCounters}
         increaseIncrement = {increaseIncrement}
         decreaseIncrement = {decreaseIncrement}
       />
+      {/* <Navbar /> */}
       <CounterList 
+        counterNum = {counterNum}
+
       // {counters} 
 
       />

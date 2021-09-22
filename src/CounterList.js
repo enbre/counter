@@ -1,14 +1,20 @@
 import React from 'react'
 import Counter from './Counter'
 
-function CounterList() {
+function CounterList(props) {
    
    
-   
+   let counters = Array(props.counterNum).fill().map((counter, index)=>(
+      // console.log(counterNum)
+      <Counter key={index}/>
+   ))
    return (
       <div className="Counter-row">
+         {counters}
          {/* {counters} */}
-         <Counter />
+         {/* [...{counterNum}] */}
+         {/* <Counter /> */}
+         {/* <Counter /> */}
       </div>
    )
 }

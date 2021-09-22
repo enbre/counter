@@ -18,9 +18,9 @@ function Counter() {
          <h3> Count: banana</h3>
          <button onClick={()=>setCount(count - (base+adjust))}>-</button>
          <button onClick={()=>setCount(count + (base+adjust))}>+</button>
-         <h3>Base unit: {base}</h3>
+         {/* <h3>Base unit: {base}</h3>
          <button onClick={()=>setBase(base - 1)}>-</button>
-         <button onClick={()=>setBase(base + 1)}>+</button>
+         <button onClick={()=>setBase(base + 1)}>+</button> */}
          <h3>Adjustment: {adjust}</h3>
          <button onClick={()=>setAdjust(adjust - 1)}>-</button>
          <button onClick={()=>setAdjust(adjust + 1)}>+</button>
