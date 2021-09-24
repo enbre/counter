@@ -6,7 +6,7 @@ function CounterList(props) {
    
    let counters = Array(props.counterNum).fill().map((counter, index)=>(
       // console.log(counterNum)
-      <Counter key={index}/>
+      <Counter key={index} id = {index} increment = {props.increment} count = {props.count}/>
    ))
    return (
       <div className="Counter-row">

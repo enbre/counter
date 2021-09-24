@@ -2,15 +2,33 @@
 import React, {useState, useEffect} from "react";
 import Header from "./Header";
 import CounterList from "./CounterList";
-import Navbar from "./Navbar"
+
 
 import './App.css';
 
 function App() {
   const [counterNum, setCounterNum] = useState(0);
   const [increment, setIncrement] = useState(1);
+  const [count, setCount] = useState(0);
+  // const [adjust, setAdjust] = useState(0);
 
+  // function for calculating total count:
+  // const total = counterNum.reduce((total, count)=>(
+  //   total + counterNum * count
+  // ),0)
+  const updateCount = (key, newCount) =>{
+    const newCounterNum = counterNum.map(counter =>{
+      if(counter.key === key){
+        return {...counter, count: newCount}
+      }
+      return counter;
+    })
+    setCounterNum (newCounterNum);
+  }
 
+  // const updateAdjust = (adjust, key) =>{
+
+  // }
 
   const increaseCounters = ()=>{
     setCounterNum(counterNum+1)
@@ -38,11 +56,14 @@ function App() {
         increaseIncrement = {increaseIncrement}
         decreaseIncrement = {decreaseIncrement}
       />
-      {/* <Navbar /> */}
       <CounterList 
         counterNum = {counterNum}
-
-      // {counters} 
+        increment = {increment}
+        count = {count}
+        updateCount = {updateCount}
+        // key = {counter.key}
+        // adjust = {adjust}
+        // updateAdjust = {updateAdjust}
 
       />
     
