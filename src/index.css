@@ -27,9 +27,10 @@ header {
 
 .Counter {
   display: inline-block;
-  min-width: 200px;
+  min-width: 180px;
   background-color:aqua;
   border: 3px solid blue;
   border-radius:15px;
   padding: 15px;
+  margin: 10px;
 }

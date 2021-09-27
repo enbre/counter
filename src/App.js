@@ -17,8 +17,8 @@ function App() {
   //   total + counterNum * count
   // ),0)
   const updateCount = (key, newCount) =>{
-    const newCounterNum = counterNum.map(counter =>{
-      if(counter.key === key){
+    const newCounterNum = Array(counterNum).fill().map(counter =>{
+      if(count.key === key){
         return {...counter, count: newCount}
       }
       return counter;
