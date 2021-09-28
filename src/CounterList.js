@@ -1,5 +1,6 @@
 import React from 'react'
 import Counter from './Counter'
+import './CSS/Counter-list.css'
 
 function CounterList(props) {
    
@@ -9,7 +10,7 @@ function CounterList(props) {
       <Counter key={index} id = {index} increment = {props.increment} count = {props.count} updateCount = {props.updateCount}/>
    ))
    return (
-      <div className="Counter-row">
+      <div className="Counter-list">
          {counters}
          {/* {counters} */}
          {/* [...{counterNum}] */}

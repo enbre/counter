@@ -2,9 +2,7 @@
 import React, {useState, useEffect} from "react";
 import Header from "./Header";
 import CounterList from "./CounterList";
-
-
-import './App.css';
+import './CSS/App.css';
 
 function App() {
   const [counterNum, setCounterNum] = useState(0);
@@ -16,19 +14,20 @@ function App() {
   // const total = counterNum.reduce((total, count)=>(
   //   total + counterNum * count
   // ),0)
-  const updateCount = (key, newCount) =>{
+
+  const updateCount = (id, newCount) =>{
     const newCounterNum = Array(counterNum).fill().map(counter =>{
-      if(count.key === key){
-        return {...counter, count: newCount}
+      console.log('counterNum',counterNum,  'count',count, 'id', id )
+      if(counterNum.id === id){
+        console.log(count, id)
+        return { Counter: setCount(newCount)}
+        // return {...counter, setCount: newCount}
       }
       return counter;
     })
+    console.log(newCounterNum[0], newCounterNum.length)
     setCounterNum (newCounterNum);
   }
-
-  // const updateAdjust = (adjust, key) =>{
-
-  // }
 
   const increaseCounters = ()=>{
     setCounterNum(counterNum+1)
@@ -42,8 +41,6 @@ function App() {
   const decreaseIncrement = () =>{
     setIncrement(increment-1)
   };
-
-
 
   return (
     <div className="App">
@@ -64,7 +61,6 @@ function App() {
         // key = {counter.key}
         // adjust = {adjust}
         // updateAdjust = {updateAdjust}
-
       />
     
     </div>

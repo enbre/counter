@@ -1,11 +1,11 @@
 import React from 'react'
+import './CSS/Header.css'
 
 function Header(props) {
    return (
-      <div className="counter-header">
+      <div className="Counter-header">
       <>
          <h1>Counters: {props.counterNum} </h1>
-         {/* <h1>Total Count: 5 </h1> */}
          <button onClick={props.decreaseCounters} disabled = {props.counterNum<1} >-</button>
          <button onClick={props.increaseCounters}>+</button>
       </>   

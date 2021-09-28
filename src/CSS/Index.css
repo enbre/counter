@@ -1,6 +1,8 @@
 *{
   box-sizing:border-box;
   margin:0;
+  text-align:center;
+  background-color: gold;
 }
 
 body {
@@ -13,24 +15,3 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-header {
-  text-align: center;
-}
-
-.Counter-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.Counter {
-  display: inline-block;
-  min-width: 180px;
-  background-color:aqua;
-  border: 3px solid blue;
-  border-radius:15px;
-  padding: 15px;
-  margin: 10px;
-}
