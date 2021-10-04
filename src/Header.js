@@ -10,6 +10,10 @@ function Header(props) {
          <button onClick={props.increaseCounters}>+</button>
       </>   
       <>
+         <h2>Total: {props.total} </h2>
+   
+      </>   
+      <>
          <h2>Base increment: {props.increment}</h2>
          <button onClick={props.decreaseIncrement} disabled = {props.increment<2}>-</button>
          <button onClick={props.increaseIncrement}>+</button>

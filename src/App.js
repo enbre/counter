@@ -2,19 +2,16 @@
 import React, {useState } from "react";
 import Header from "./Header";
 import CounterList from "./CounterList";
-import Counter from "./Counter"
+// import Counter from "./Counter"
 import './CSS/App.css';
 
 function App() {
   const [counterNum, setCounterNum] = useState(0);
   const [increment, setIncrement] = useState(1);
+  const [total, setTotal] = useState(0);
   const [count, setCount] = useState(0);
   // const [adjust, setAdjust] = useState(0);
 
-  // function for calculating total count:
-  // const total = counterNum.reduce((total, count)=>(
-  //   total + counterNum * count
-  // ),0)
 
   const updateCount = (id, newCount) =>{
     console.log('----------')
@@ -65,6 +62,7 @@ function App() {
         decreaseCounters = {decreaseCounters}
         increaseIncrement = {increaseIncrement}
         decreaseIncrement = {decreaseIncrement}
+        total = {total}
       />
       <CounterList 
         counterNum = {counterNum}
