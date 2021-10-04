@@ -11,7 +11,7 @@ function Header(props) {
       </>   
       <>
          <h2>Base increment: {props.increment}</h2>
-         <button onClick={props.decreaseIncrement}>-</button>
+         <button onClick={props.decreaseIncrement} disabled = {props.increment<2}>-</button>
          <button onClick={props.increaseIncrement}>+</button>
       </>
       </div>
