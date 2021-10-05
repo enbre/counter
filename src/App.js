@@ -1,43 +1,24 @@
-// import logo from './logo.svg';
-import React, {useState } from "react";
+import React, {useState, useEffect } from "react";
 import Header from "./Header";
 import CounterList from "./CounterList";
-// import Counter from "./Counter"
 import './CSS/App.css';
 
 function App() {
   const [counterNum, setCounterNum] = useState(0);
   const [increment, setIncrement] = useState(1);
   const [total, setTotal] = useState(0);
-  const [count, setCount] = useState(0);
-  // const [adjust, setAdjust] = useState(0);
 
-
-  const updateCount = (id, newCount) =>{
-    console.log('----------')
-    console.log('counterNum',counterNum, 'newCount',newCount, 'count',count, 'id', id )
-    const clicked = document.getElementById(2);
-    // const clicked = document.getElementById(`Counter${id}`);
-    console.log('clicked:',clicked)
-    // if(id === clicked){
-    if(id === 2){
-      setCount (newCount);
-    }
-    // const newCounterNum = Array(counterNum).fill().map((counter,id) =>(
-    //   // if(counterNum[id] === id){
-    //       // console.log('count:',count, id)
-    //   <Counter key ={id} count = {newCount} />
-    //   //   return  <Counter />
-    //   //   // return {...counter, setCount: newCount}
-    //   // }
-    //   // console.log("---")
-    //   // return <Counter />;
-
-    // ))
-    // console.log('test',newCounterNum)
-    
-    
-  }
+  const updateTotal = ()=>{
+    const totalArr = [0];
+    document.querySelectorAll(`.Counter`).forEach(val =>
+      totalArr.push(parseInt(val.attributes.value.value)))
+    const newTotal = totalArr.reduce((a,b)=> a+b)   
+    setTotal(newTotal)   
+}
+  useEffect(()=>{
+    updateTotal();
+    document.getElementById('Total').innerText = `Total: ${total}`
+  },[total])
 
   const increaseCounters = ()=>{
     setCounterNum(counterNum+1)
@@ -67,12 +48,8 @@ function App() {
       <CounterList 
         counterNum = {counterNum}
         increment = {increment}
-        count = {count}
-        updateCount = {updateCount}
-        // key = {counter.key}
-        // adjust = {adjust}
-        // updateAdjust = {updateAdjust}
-      />
+        updateTotal = {updateTotal}
+        />
     
     </div>
   );

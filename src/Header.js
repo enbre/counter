@@ -10,7 +10,7 @@ function Header(props) {
          <button onClick={props.increaseCounters}>+</button>
       </>   
       <>
-         <h2>Total: {props.total} </h2>
+         <h2 id = "Total" >Total: {props.total} </h2>
    
       </>   
       <>
