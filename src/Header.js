@@ -11,7 +11,6 @@ function Header(props) {
       </>   
       <>
          <h2 id = "Total" >Total: {props.total} </h2>
-   
       </>   
       <>
          <h2>Base increment: {props.increment}</h2>

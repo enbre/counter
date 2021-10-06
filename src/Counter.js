@@ -4,19 +4,17 @@ import './CSS/Counter.css'
 function Counter({ increment, id, updateTotal}) {
    const [count, setCount] = useState(0);
 
-
    useEffect(() => {
       document.getElementById(`Counter${id}` ).innerText = `Count: ${count}`
+      updateTotal()
    }
-   ,[count, increment, id]
+   ,[count,id, updateTotal]
    )
    const increaseCount = () =>{
       setCount(count + increment)
-      updateTotal()
    }
    const decreaseCount = () =>{
       setCount(count - increment)
-      updateTotal()
    }
 
    return (
