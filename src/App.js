@@ -33,7 +33,7 @@ function App() {
   return (
     <div className="App">
     
-      <Header className="App-header" 
+      <Header  
         counterNum = {counterNum}
         increment = {increment}
         increaseCounters = {increaseCounters} 
@@ -46,7 +46,6 @@ function App() {
         counterNum = {counterNum}
         increment = {increment}
         updateTotal = {updateTotal}
-        // total = {total}
         />
     
     </div>
