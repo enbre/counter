@@ -2,12 +2,11 @@ import React from 'react'
 import './CSS/Header.css'
 
 function Header(props) {
+   
    const closeCounter = ()=>{
-      props.decreaseCounters()
       let lastCounter = document.querySelector('.Counter:last-of-type')
-      console.log(lastCounter)
-      lastCounter.classList.remove('animate__bounceInDown')
-      lastCounter.classList.add('animate__rollOut')
+      lastCounter.classList.add('animate__bounceOutDown')
+      setTimeout(function () {props.decreaseCounters()},600)
    }
 
    return (

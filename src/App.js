@@ -14,7 +14,7 @@ function App() {
       totalArr.push(parseInt(val.attributes.value.value)))
     let newTotal =  totalArr.reduce((a,b)=> a+b)   
     setTotal(newTotal)   
-    document.getElementById('Total').innerText = `Total: ${total}`
+    document.getElementById('Total').innerText = `Total: ${newTotal}`
 }
 
   const increaseCounters = ()=>{
@@ -22,6 +22,9 @@ function App() {
   };
   const decreaseCounters = () =>{
     setCounterNum(counterNum-1)
+    if(counterNum === 1) {
+      updateTotal()
+    }
   };
   const increaseIncrement = () => {
     setIncrement(increment+1)
