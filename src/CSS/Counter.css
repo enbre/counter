@@ -8,6 +8,6 @@
    padding: 15px;
    margin: 10px;
 }
-.animate__zoomIn{
-   --animate-duration: .2s;
+.animate__bounceInDown{
+   --animate-duration: .5s;
 }

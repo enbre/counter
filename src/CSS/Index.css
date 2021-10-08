@@ -7,10 +7,25 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family:'Red Hat Display', sans-serif;
+}
+button {
+  background-color:rgba(140,123,204,1);
+  border-style:none; 
+  margin: 1.5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 7px;
+  font-size: 2em;
+  font-weight: bold;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+button:disabled{
+  font-weight:normal;
+  background-color:rgba(140,123,204,.5);
+  /* background-color: aqua; */
 }
 
