@@ -5,22 +5,18 @@
    justify-content:center;
    align-items: flex-end;
    height: 5em;
-
-}
-.Header-text h2{
-   margin-bottom: -4px;
-   /* border: 1px solid purple; */
 }
 .Header-text{
    display: flex;
-   /* border: 1px solid purple; */
    justify-content:flex-start;
+   margin-bottom: -4px;
    width: 10em;
+   border: 1px solid gray;
 }
 .Header-buttons{
+   border: 1px solid gray;
    display: flex;
    flex-direction: row;
-   /* border: 1px solid black; */
    justify-content:flex-start;
    margin-right: 4em;
    margin-left: -1em;

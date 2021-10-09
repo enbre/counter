@@ -1,13 +1,30 @@
 .Counter {
-   
-   display: inline-block;
-   min-width: 180px;
+   /* display: inline-block; */
+   display: flex;
+   flex-direction: column;
+   width: 15em;
    background-color: aqua;
    border: 3px solid blue;
-   border-radius: 15px;
-   padding: 15px;
+   border-radius: 10px;
+   /* padding: 15px; */
    margin: 10px;
 }
+.Counter-element{
+   border:1px solid gold;
+   margin: .1em;
+   align-items: flex-start;
+   text-align: left;
+}
+.Counter-buttons{
+   border: 1px solid gray;
+   display: flex;
+   flex-direction: row;
+   justify-content:flex-start;
+   margin-right: 4em;
+   margin-left: -1em;
+   width: 3em;
+}
+
 .animate__bounceInDown{
    --animate-duration: .5s;
 }

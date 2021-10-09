@@ -20,14 +20,24 @@ function Counter({ increment, id, updateTotal}) {
 
    return (
       <div className="Counter animate__animated animate__bounceInDown" value={count} >
-         <h3 className="Counter-title" id = {`Counter${id}`} value = {count}> Count: {count}  </h3>
-         <button  onClick={decreaseCount}>-</button>
-         <button onClick={increaseCount}>+</button>
-         <h4>Increment: {increment}</h4>
-         <h4>Increment adjust: {adjust}</h4>
-         <button onClick={()=>setAdjust(adjust - 1)}>-</button>
-         <button onClick={()=>setAdjust(adjust + 1)}>+</button>
-         <h4>Increment adjust: {adjust+increment}</h4>
+         <div className="Counter-element">
+            <h3 className="Counter-title" id = {`Counter${id}`} value = {count}> Count: {count}  </h3>
+            <div className="Counter-buttons">
+               <button  onClick={decreaseCount}>-</button>
+               <button onClick={increaseCount}>+</button>
+            </div>
+         </div>
+         <div className="Counter-element">
+            <h4>Base: {increment}</h4>
+         </div>
+         <div className="Counter-element">
+            <h4>Adjust: {adjust}</h4>
+            <div className="Counter-buttons">
+               <button onClick={()=>setAdjust(adjust - 1)}>-</button>
+               <button onClick={()=>setAdjust(adjust + 1)}>+</button>
+            </div>
+            <h4>Increment: {adjust+increment}</h4>
+         </div>
       </div>
    )
 }
