@@ -6,23 +6,26 @@ function Header(props) {
    const closeCounter = ()=>{
       let lastCounter = document.querySelector('.Counter:last-of-type')
       lastCounter.classList.add('animate__bounceOutDown')
-      setTimeout(function () {props.decreaseCounters()},600)
+      setTimeout(function () {props.decreaseCounters()},300)
    }
 
    return (
       <div className="Counter-header">
-         <div className="Counter-element">
+         <div className="Header-text">
             <h2>Counters: &#160; {props.counterNum} </h2>
-            <br/>
+         </div>   
+         <div className="Header-buttons">
             <button onClick={closeCounter} disabled = {props.counterNum<1} >-</button>
             <button onClick={props.increaseCounters}>+</button>
          </div>   
-         <div className="Counter-element">
+         <div className="Header-text">
             <h2>Increment: {props.increment}</h2>
+         </div>
+         <div className="Header-buttons">
             <button onClick={props.decreaseIncrement} disabled = {props.increment<2}>-</button>
             <button onClick={props.increaseIncrement}>+</button>
          </div>
-         <div className="Counter-element">
+         <div className="Header-text">
             <h2 id = "Total" >Total:{props.total} </h2>
          </div>
       </div>

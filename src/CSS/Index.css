@@ -1,7 +1,7 @@
 *{
   box-sizing:border-box;
   margin:0;
-  text-align:center;
+  /* text-align:center; */
 }
 
 body {
@@ -26,6 +26,5 @@ button {
 button:disabled{
   font-weight:normal;
   background-color:rgba(140,123,204,.5);
-  /* background-color: aqua; */
 }
 
