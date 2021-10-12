@@ -28,15 +28,17 @@ function Counter({ increment, id, updateTotal}) {
             </div>
          </div>
          <div className="Counter-element">
-            <h4>Base: {increment}</h4>
+            <h4>Base increment: {increment}</h4>
          </div>
          <div className="Counter-element">
-            <h4>Adjust: {adjust}</h4>
+            <h4>Adjustment: {adjust}</h4>
             <div className="Counter-buttons">
                <button onClick={()=>setAdjust(adjust - 1)}>-</button>
                <button onClick={()=>setAdjust(adjust + 1)}>+</button>
             </div>
-            <h4>Increment: {adjust+increment}</h4>
+         </div>
+         <div className="Counter-element">
+            <h3>Increment: {adjust+increment}</h3>
          </div>
       </div>
    )
