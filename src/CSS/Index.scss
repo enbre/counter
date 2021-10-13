@@ -9,11 +9,12 @@ body {
    margin: 0;
    padding: 0;
    font-family: 'Red Hat Display', sans-serif;
-   background-color: $light-grey;
+   background-color: $green4;
+   color:$dark-grey
 }
 
 button {
-   background-color: $light-purple;
+   background-color: $purple3;
    border-style: none;
    margin: 1.5px;
    width: 25px;
@@ -27,7 +28,7 @@ button {
 
 button:disabled {
    font-weight: normal;
-   background-color: $light-purple-disabled;
+   background-color: $purple3-disabled;
 }
 
 .App {
