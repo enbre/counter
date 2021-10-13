@@ -6,7 +6,7 @@ function Header(props) {
    const closeCounter = ()=>{
       let lastCounter = document.querySelector('.Counter:last-of-type')
       lastCounter.classList.add('animate__bounceOutDown')
-      setTimeout(function () {props.decreaseCounters()},300)
+      setTimeout(function () {props.decreaseCounters()},400)
    }
 
    return (

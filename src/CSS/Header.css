@@ -1,22 +1,47 @@
-.Counter-header{
-   background-color: aquamarine;
-   padding-bottom: 1em;
-   display: flex;
-   justify-content:center;
-   align-items: flex-end;
-   height: 5em;
+.Counter-header {
+  background-color: #3c3c3c;
+  padding-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  /* border: 1px solid black; */
+  height: 5em;
 }
-.Header-text{
-   display: flex;
-   justify-content:flex-start;
-   margin-bottom: -.3em;
-   width: 10em;
-   font-size: 1.2em
+
+.Header-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  margin-bottom: -.3em;
+  width: 10em;
+  font-size: 1.2em;
+  /* border: 1px solid black; */
 }
-.Header-buttons{
-   display: flex;
-   justify-content:flex-start;
-   margin-right: 4em;
-   margin-left: -1em;
-   width: 3em;
+
+.Header-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-right: 4em;
+  margin-left: -1em;
+  width: 3em;
+  /* border: 1px solid black; */
 }
+/*# sourceMappingURL=Header.css.map */

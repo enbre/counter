@@ -1,0 +1,28 @@
+@import './variables';
+
+.Counter {
+   width: 13em;
+   background-color:$light-orange;
+   border: 3px solid $dark-grey;
+   border-radius: 10px;
+   padding: .3em;
+   margin: 10px;
+   font-size:1.2em;
+}
+.Counter-element{
+   display: flex;
+   margin: .1em;
+   padding: 0em .4em;
+   align-items: center;
+   justify-content:space-between;
+   height: 2em;
+}
+.Counter-buttons{
+   display: flex;
+}
+.Counter-title{
+   font-size: 1.3em;
+}
+.animate__bounceInDown{
+   --animate-duration: .6s;
+}

@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import Header from "./Header";
 import CounterList from "./CounterList";
-import './CSS/App.css';
 
 function App() {
   const [counterNum, setCounterNum] = useState(0);

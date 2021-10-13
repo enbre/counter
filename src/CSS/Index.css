@@ -1,30 +1,41 @@
-*{
-  box-sizing:border-box;
-  margin:0;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family:'Red Hat Display', sans-serif;
-  background-color:magenta;
-  background-color: grey;
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: #c8c8c8;
 }
+
 button {
-  background-color:rgba(140,123,204,1);
-  border-style:none; 
+  background-color: #9c20bf;
+  border-style: none;
   margin: 1.5px;
   width: 25px;
   height: 25px;
   border-radius: 7px;
   font-size: 2em;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-button:disabled{
-  font-weight:normal;
-  background-color:rgba(140,123,204,.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
+button:disabled {
+  font-weight: normal;
+  background-color: rgba(156, 32, 191, 0.5);
+}
+
+.App {
+  text-align: center;
+}
+/*# sourceMappingURL=Index.css.map */
