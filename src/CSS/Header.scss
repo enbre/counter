@@ -17,6 +17,9 @@
    margin-bottom: -.3em;
    width: 10em;
    font-size: 1.2em;
+   &-negative{
+      color:$purple3;
+   }
    /* border: 1px solid black; */
 }
 .Header-buttons{

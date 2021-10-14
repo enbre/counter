@@ -1,12 +1,15 @@
 .Counter {
   width: 13em;
-  background-color: #e4d6f5;
-  background-color: #f5ebc8;
+  background-color: #88d8ab;
   border: 3px solid #3c3c3c;
   border-radius: 10px;
   padding: .3em;
   margin: 10px;
   font-size: 1.2em;
+}
+
+.Counter-negative {
+  background-color: #f5ebc8;
 }
 
 .Counter-element {

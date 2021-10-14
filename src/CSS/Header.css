@@ -32,6 +32,10 @@
   /* border: 1px solid black; */
 }
 
+.Header-text-negative {
+  color: #9c20bf;
+}
+
 .Header-buttons {
   display: -webkit-box;
   display: -ms-flexbox;

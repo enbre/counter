@@ -2,13 +2,15 @@
 
 .Counter {
    width: 13em;
-   background-color:$purple1;//use this when counter is negative
-   background-color:$orange1;
+   background-color:$green1;
    border: 3px solid $dark-grey;
    border-radius: 10px;
    padding: .3em;
    margin: 10px;
    font-size:1.2em;
+   &-negative {
+      background-color: $orange1;
+   }
 }
 .Counter-element{
    display: flex;

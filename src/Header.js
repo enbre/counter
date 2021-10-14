@@ -12,7 +12,7 @@ function Header(props) {
    return (
       <div className="Counter-header">
          <div className="Header-text">
-            <h2>Counters: &#160; {props.counterNum} </h2>
+            <h2>Counters:  {props.counterNum} </h2>
          </div>   
          <div className="Header-buttons">
             <button onClick={closeCounter} disabled = {props.counterNum<1} >-</button>
@@ -25,7 +25,7 @@ function Header(props) {
             <button onClick={props.decreaseIncrement} disabled = {props.increment<2}>-</button>
             <button onClick={props.increaseIncrement}>+</button>
          </div>
-         <div className="Header-text">
+         <div className={`Header-text ${props.total < 0 ? 'Header-text-negative':''}`}>
             <h2 id = "Total" >Total:{props.total} </h2>
          </div>
       </div>
