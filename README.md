@@ -1,6 +1,19 @@
-# Counter App
+# Counters
 ---
 
+### React counter app, with some expanded features.
 
-#### A simple react counter project refactoring class components and exploring state management
+
+## Features:
+
+#### * Ability to change the base increment for all counters
+#### * Ability to adjust the increment for each counter
+#### * Ability to have a running total of all counters
+#### * Animations for counters being added & removed
+
+## Technology used: 
+
+#### * React, JavaScript, HTML, CSS, SASS
+
+---
 
