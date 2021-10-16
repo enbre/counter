@@ -6,7 +6,6 @@
    display: flex;
    justify-content:center;
    align-items: flex-end;
-   /* border: 1px solid black; */
    height: 5em;
 }
 .Header-text{
@@ -18,15 +17,19 @@
    width: 10em;
    font-size: 1.2em;
    &-negative{
+      background-color: $orange1;
+      box-sizing: content-box;
       color:$purple3;
+      box-shadow: inset 0px 0px 0px 3px $dark-grey;
+      border-radius: 10px;
    }
-   /* border: 1px solid black; */
 }
 .Header-buttons{
    display: flex;
    justify-content:flex-start;
    margin-right: 4em;
-   margin-left: -1em;
    width: 3em;
-   /* border: 1px solid black; */
+}
+#Total{
+   margin-left: 1.5em;
 }

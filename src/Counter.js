@@ -21,7 +21,7 @@ function Counter({ increment, id, updateTotal}) {
    return (
       <div className={`Counter animate__animated animate__bounceInDown ${count < 0 ? ' Counter-negative':''}`} value={count} >
          <div className="Counter-element">
-            <h3 className="Counter-title" id = {`Counter${id}`} value = {count}> Count: {count}  </h3>
+            <h3 className={`Counter-title ${count < 0 ? 'Counter-title-negative':''} `} id = {`Counter${id}`} value = {count}> Count: {count}  </h3>
             <div className="Counter-buttons">
                <button  onClick={decreaseCount}>-</button>
                <button onClick={increaseCount}>+</button>

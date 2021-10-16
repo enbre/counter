@@ -37,6 +37,10 @@
   font-size: 1.3em;
 }
 
+.Counter-title-negative {
+  color: #9c20bf;
+}
+
 .animate__bounceInDown {
   --animate-duration: .6s;
 }

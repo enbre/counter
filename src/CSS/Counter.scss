@@ -25,6 +25,9 @@
 }
 .Counter-title{
    font-size: 1.3em;
+   &-negative{
+      color:$purple3;
+   }
 }
 .animate__bounceInDown{
    --animate-duration: .6s;

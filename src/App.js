@@ -21,7 +21,7 @@ function App() {
   };
   const decreaseCounters = () =>{
     setCounterNum(counterNum-1)
-    if(counterNum === 1) {
+    if(counterNum === 1) { 
       updateTotal()
     }
   };

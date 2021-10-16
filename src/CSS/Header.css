@@ -10,7 +10,6 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  /* border: 1px solid black; */
   height: 5em;
 }
 
@@ -29,11 +28,16 @@
   margin-bottom: -.3em;
   width: 10em;
   font-size: 1.2em;
-  /* border: 1px solid black; */
 }
 
 .Header-text-negative {
+  background-color: #f5ebc8;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   color: #9c20bf;
+  -webkit-box-shadow: inset 0px 0px 0px 3px #3c3c3c;
+          box-shadow: inset 0px 0px 0px 3px #3c3c3c;
+  border-radius: 10px;
 }
 
 .Header-buttons {
@@ -44,8 +48,10 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin-right: 4em;
-  margin-left: -1em;
   width: 3em;
-  /* border: 1px solid black; */
+}
+
+#Total {
+  margin-left: 1.5em;
 }
 /*# sourceMappingURL=Header.css.map */
