@@ -1,5 +1,6 @@
 {
   "name": "counter",
+  "homepage": "http://noahbrezel.com/counters/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
